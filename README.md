@@ -1,3 +1,33 @@
+
+# Exercise 1
+# Design Patterns in Java
+
+## Behavioral Design Patterns
+
+1. **Observer Pattern**: Defines a one-to-many dependency, so when one object changes state, all its dependents are notified automatically.
+   - **Example**: Weather Station notifying multiple display devices of a temperature change.
+
+2. **Command Pattern**: Encapsulates a request as an object, allowing the parameterization of clients with different requests.
+   - **Example**: Home Automation system where a remote control operates lights.
+
+## Creational Design Patterns
+
+1. **Factory Pattern**: Defines an interface for creating objects but lets subclasses alter the type of objects that will be created.
+   - **Example**: Shape Factory that creates Circle or Rectangle objects.
+
+2. **Singleton Pattern**: Ensures that a class has only one instance and provides a global point of access to it.
+   - **Example**: Single Database instance across the application.
+
+## Structural Design Patterns
+
+1. **Adapter Pattern**: Allows incompatible interfaces to work together by acting as a bridge.
+   - **Example**: Adapter that allows a 3-pin plug to work with a 2-pin socket.
+
+2. **Decorator Pattern**: Dynamically attaches additional responsibilities to an object, providing flexible functionality extension.
+   - **Example**: Adding extra toppings to a base pizza like cheese and pepperoni.
+
+
+# Exercise 2
 # Smart Office Booking System
 
 ## Overview
