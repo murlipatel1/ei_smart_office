@@ -26,10 +26,7 @@ The Smart Office Booking System is a Spring Boot application that helps manage m
 
 ## Backend Structure
 
-![image](https://github.com/user-attachments/assets/3ca56668-d4db-4923-863c-fe6b276acaf7)
-
-
-## Package Descriptions
+### Package Descriptions
 
 ### 1. Controller Package
 - **`OfficeController.java`**: Manages HTTP requests related to office operations, including booking and cancelling rooms.
