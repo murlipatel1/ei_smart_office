@@ -23,3 +23,47 @@ The Smart Office Booking System is a Spring Boot application that helps manage m
 ## Database Schema 
 
 ![ei_java_app](https://github.com/user-attachments/assets/b3a151f7-ed33-4e46-9191-8fe07e33b3cb)
+
+## Backend Structure
+
+![image](https://github.com/user-attachments/assets/3ca56668-d4db-4923-863c-fe6b276acaf7)
+
+
+## Package Descriptions
+
+### 1. Controller Package
+- **`OfficeController.java`**: Manages HTTP requests related to office operations, including booking and cancelling rooms.
+
+### 2. Service Package
+- **`OfficeService.java`**: Contains business logic for managing office resources and operations.
+- **`RoomBookingService.java`**: Handles the booking and cancellation of rooms, ensuring proper status updates.
+- **`OccupancyService.java`**: Manages room occupancy, updating room status based on user presence.
+
+### 3. Repository Package
+- **`RoomRepository.java`**: Interface for database operations related to room entities.
+- **`BookingRepository.java`**: Interface for handling bookings, including querying and modifying booking records.
+- **`UserRepository.java`**: Interface for managing user data and interactions with the database.
+
+### 4. Model Package
+- **`Room.java`**: Represents a meeting room entity, including room number and status.
+- **`Booking.java`**: Represents a booking entity that links users to rooms with details like start time and duration.
+- **`User.java`**: Represents a user entity, containing user-specific details such as username and email.
+
+### 5. Patterns Package
+- **Singleton Pattern**
+  - **`OfficeSingleton.java`**: Implements the Singleton design pattern to ensure a single instance of office resources is managed.
+  
+- **Command Pattern**
+  - **`BookingCommand.java`**: Abstract command class for executing room booking operations.
+  - **`BookRoomCommand.java`**: Concrete command for booking a room.
+  - **`CancelRoomCommand.java`**: Concrete command for canceling a room booking.
+
+- **Observer Pattern**
+  - **`RoomObserver.java`**: Interface for observers interested in room state changes.
+  - **`ACControl.java`**: Observer that manages air conditioning based on room occupancy.
+  - **`LightControl.java`**: Observer that controls lighting based on room occupancy.
+
+### 6. Resources Package
+- **`application.properties`**: Configuration file containing database connection settings and application properties.
+
+
